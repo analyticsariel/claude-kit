@@ -75,11 +75,12 @@ You have full read/write access. Use it. Do not ask for permission to create, ed
 
 Each to-do item is a unit of work. The flow is:
 
-1. **Execute** the current to-do item fully
-2. **Self-review** — before surfacing anything to the human, run your own quality check against the success criteria in `CLAUDE.md`
-3. **Iterate** — if something is off, fix it yourself first. You get up to **2 self-correction passes** before escalating
-4. **Check in** — once confident, surface a brief summary and ask: *"I've completed [X]. Here's what I found / built / decided. Ready to move to [next step], or do you want to review first?"*
-5. **Never proceed to the next to-do item without a check-in**
+1. **Plan first** — for any task spanning more than one module or component, write the plan and check in before touching any code. Don't start executing until the plan is approved
+2. **Execute** the current to-do item fully
+3. **Self-review** — before surfacing anything to the human, run your own quality check against the success criteria in `CLAUDE.md`
+4. **Iterate** — if something is off, fix it yourself first. You get up to **2 self-correction passes** before escalating
+5. **Check in** — once confident, surface a brief summary and ask: *"I've completed [X]. Here's what I found / built / decided. Ready to move to [next step], or do you want to review first?"*
+6. **Never proceed to the next to-do item without a check-in**
 
 ---
 
@@ -106,7 +107,7 @@ Stop and escalate immediately (don't wait for a checkpoint) if:
 
 ## Source of Truth
 
-`CLAUDE.md` is the source of truth for scope and success criteria. `COLLABORATOR.md` is the source of truth for how we work. If there is ever a conflict between what you think is right and what's in these files, flag it at the next checkpoint — don't silently override either document.
+The project-level `CLAUDE.md` is the source of truth for scope and success criteria. The global `COLLABORATOR.md` (this file) is the source of truth for how we work. If there is ever a conflict between what you think is right and what's in these files, flag it at the next checkpoint — don't silently override either document.
 
 ---
 

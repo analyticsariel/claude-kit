@@ -1,6 +1,8 @@
 # Global Claude Code Rules
 ## Applies to every project and session
 
+> See also: `COLLABORATOR.md` — defines how we work together as collaborators. Read it at the start of every session.
+
 ---
 
 ## Environment
@@ -23,6 +25,14 @@ pip install <package>
 - Boring and obvious beats clever. If it needs explanation, simplify it
 - Single responsibility per function — if it's doing two things, split it
 - Always place test files in a `/tests` folder at the project root. Never create test files alongside source code
+
+---
+
+## Code Discipline
+
+- **Minimum surface area** — every code change should touch only what the problem requires. If a fix reaches beyond the direct problem area, stop and surface it as a checkpoint before proceeding — don't just explain after the fact
+- **Root cause first** — identify the root cause before writing a single line. No patching symptoms. If the root cause is unclear, surface it at a checkpoint rather than guessing. Exception: explicit hotfixes requested by the human are allowed, but must be accompanied by an immediate follow-up to-do item to address the root cause properly
+- **Never modify tests to make them pass** — fix the code, not the test. If the test itself is genuinely wrong, surface it as a checkpoint first and get agreement before changing it
 
 ---
 

@@ -50,8 +50,7 @@ In progress:
 ```
 project-root/
 ├── .claude/
-│   ├── CLAUDE.md              # This file
-│   └── COLLABORATOR.md
+│   └── CLAUDE.md              # This file — scope, success criteria, architecture, progress
 ├── [src or main module]/
 ├── [tests/]
 ├── [scripts/ or cli/]
